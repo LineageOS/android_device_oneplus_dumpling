@@ -23,7 +23,7 @@
 #
 
 # Inherit from oneplus msm8998-common
--include device/oneplus/msm8998-common/BoardConfigCommon.mk
+include device/oneplus/msm8998-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/oneplus/dumpling
 
