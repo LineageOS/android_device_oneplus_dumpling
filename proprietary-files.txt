@@ -352,7 +352,7 @@ vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
 
 # Fingerprint sensor
-lib64/hw/fingerprint.msm8998.gf.so
+lib64/hw/fingerprint.msm8998.gf.so:lib64/hw/gf_fingerprint.msm8998.so
 lib64/hw/fingerprint.msm8998.so
 lib64/libgf_ca.so
 lib64/libgf_hal.so
