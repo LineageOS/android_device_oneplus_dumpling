@@ -1,3 +1,6 @@
+# ADSP modules
+vendor/lib/rfsa/adsp/libdirac17801-capiv2.so
+
 # Audio
 etc/firmware/tfa98xx.cnt
 
