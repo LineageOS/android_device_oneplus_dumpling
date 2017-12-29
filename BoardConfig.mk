@@ -25,17 +25,17 @@
 # Inherit from oneplus msm8998-common
 -include device/oneplus/msm8998-common/BoardConfigCommon.mk
 
-PLATFORM_PATH := device/oneplus/dumpling
+DEVICE_PATH := device/oneplus/dumpling
 
 # Assertions
-TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
+TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := dumpling
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(PLATFORM_PATH)/bluetooth/include
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Filesystem
-TARGET_FS_CONFIG_GEN += $(PLATFORM_PATH)/config.fs
+TARGET_FS_CONFIG_GEN += $(DEVICE_PATH)/config.fs
 
 # inherit from the proprietary version
 -include vendor/oneplus/dumpling/BoardConfigVendor.mk
