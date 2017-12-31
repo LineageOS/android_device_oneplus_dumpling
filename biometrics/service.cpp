@@ -14,23 +14,14 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "biometrics.fingerprint@2.0-service-custom"
-
-#include <binder/IPCThreadState.h>
-#include <binder/IServiceManager.h>
-#include <binder/PermissionCache.h>
-#include <binder/ProcessState.h>
-#include <utils/String16.h>
-#include <keystore/keystore.h> // for error codes
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service"
 
 #include <android/log.h>
 #include <hidl/HidlSupport.h>
 #include <hidl/HidlTransportSupport.h>
 #include <android/hardware/biometrics/fingerprint/2.1/IBiometricsFingerprint.h>
 #include <android/hardware/biometrics/fingerprint/2.1/types.h>
-
 #include "BiometricsFingerprint.h"
-#include "fingerprintd/FingerprintDaemonProxy.h"
 
 using android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint;
 using android::hardware::biometrics::fingerprint::V2_1::implementation::BiometricsFingerprint;
@@ -39,30 +30,17 @@ using android::hardware::joinRpcThreadpool;
 using android::sp;
 
 int main() {
-    ALOGE("Start fingerprintd");
-    android::sp<android::IServiceManager> serviceManager = android::defaultServiceManager();
-    android::sp<android::FingerprintDaemonProxy> proxy =
-            android::FingerprintDaemonProxy::getInstance();
-    android::status_t ret = serviceManager->addService(
-            android::FingerprintDaemonProxy::descriptor, proxy);
-    if (ret != android::OK) {
-        ALOGE("Couldn't register " LOG_TAG " binder service!");
-        return -1;
-    }
-
-    ALOGE("Start biometrics");
     android::sp<IBiometricsFingerprint> bio = BiometricsFingerprint::getInstance();
-    configureRpcThreadpool(1, false /*callerWillJoin*/);
+
+    configureRpcThreadpool(1, true /*callerWillJoin*/);
+
     if (bio != nullptr) {
-        ret = bio->registerAsService();
-        if (ret != android::OK) {
-            ALOGE("Cannot register BiometricsFingerprint service: %d", ret);
-        }
+        bio->registerAsService();
     } else {
         ALOGE("Can't create instance of BiometricsFingerprint, nullptr");
     }
 
-    android::IPCThreadState::self()->joinThreadPool();   // run binder service fingerprintd part
+    joinRpcThreadpool();
 
     return 0; // should never get here
 }
