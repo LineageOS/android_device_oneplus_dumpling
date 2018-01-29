@@ -31,4 +31,8 @@
 #define BLE_VND_INCLUDED   TRUE
 // skips conn update at conn completion
 #define BT_CLEAN_TURN_ON_DISABLED 1
+
+/* Enable HFP WBS feature */
+#define BTIF_HF_CLIENT_WBS_INCLUDED TRUE
+
 #endif
