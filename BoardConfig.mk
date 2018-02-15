@@ -29,7 +29,7 @@ DEVICE_PATH := device/oneplus/dumpling
 
 # Assertions
 TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
-TARGET_OTA_ASSERT_DEVICE := dumpling
+TARGET_OTA_ASSERT_DEVICE := dumpling,OnePlus5T,oneplus5t
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
