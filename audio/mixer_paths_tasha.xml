@@ -72,7 +72,7 @@
     <ctl name="DEC2 Volume" value="84" />
     <ctl name="DEC3 Volume" value="84" />
     <ctl name="DEC4 Volume" value="84" />
-    <ctl name="DEC5 Volume" value="96" />
+    <ctl name="DEC5 Volume" value="84" />
     <ctl name="DEC6 Volume" value="96" />
     <ctl name="DEC7 Volume" value="96" />
     <ctl name="DEC8 Volume" value="96" />
@@ -80,8 +80,7 @@
     <ctl name="COMP2 Switch" value="1" />
     <ctl name="COMP7 Switch" value="0" />
     <ctl name="COMP8 Switch" value="0" />
-    <ctl name="RX HPH Mode" value="CLS_H_HIFI" />
-    <!--<ctl name="RX HPH Mode" value="CLS_H_LP" /> -->
+    <ctl name="RX HPH Mode" value="CLS_H_LP" />
     <ctl name="SLIMBUS_3_RX Port Mixer MI2S_TX" value="0" />
     <ctl name="SLIMBUS_0_RX Port Mixer SLIM_0_TX" value="0" />
     <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia1" value="0" />
@@ -597,7 +596,6 @@
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia7" value="0" />
     <ctl name="mono Profile" value="music_hq" />
     <ctl name="BOB Power" value="0" />
-    <ctl name="left Profile" value="1"/>
 
     <!-- split a2dp -->
     <ctl name="BT SampleRate" value="KHZ_8" />
@@ -2755,6 +2753,7 @@
         <ctl name="SLIM TX4 MUX" value="DEC4" />
         <ctl name="ADC MUX4" value="AMIC" />
         <ctl name="AMIC MUX4" value="ADC4" />
+        <ctl name="SLIM_0_TX Channels" value="Two" />
     </path>
 
     <path name="speaker-dmic-endfire-wechat-vm">
