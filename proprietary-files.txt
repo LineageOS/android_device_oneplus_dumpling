@@ -18,14 +18,16 @@ vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Fingerprint sensor
-lib/libgf_ca.so
-lib/libgf_hal.so
-lib/libgoodixfingerprintd_binder.so
-lib/hw/fingerprint.msm8998.gf.so:lib/hw/gf_fingerprint.msm8998.so
-lib64/libgf_ca.so
-lib64/libgf_hal.so
-lib64/libgoodixfingerprintd_binder.so
-lib64/hw/fingerprint.msm8998.gf.so:lib64/hw/gf_fingerprint.msm8998.so
+lib/hw/fingerprint.msm8998.gf.so:vendor/lib/hw/fingerprint.goodix.so
+lib/hw/fingerprint.msm8998.so:vendor/lib/hw/fingerprint.fpc.so
+lib/libgf_ca.so:vendor/lib/libgf_ca.so
+lib/libgf_hal.so:vendor/lib/libgf_hal.so
+lib/libgoodixfingerprintd_binder.so:vendor/lib/libgoodixfingerprintd_binder.so
+lib64/hw/fingerprint.msm8998.gf.so:vendor/lib64/hw/fingerprint.goodix.so
+lib64/hw/fingerprint.msm8998.so:vendor/lib64/hw/fingerprint.fpc.so
+lib64/libgf_ca.so:vendor/lib64/libgf_ca.so
+lib64/libgf_hal.so:vendor/lib64/libgf_hal.so
+lib64/libgoodixfingerprintd_binder.so:vendor/lib64/libgoodixfingerprintd_binder.so
 
 # Display calib
 vendor/etc/qdcm_calib_data_samsung_s6e3fc1_cmd_mode_dsi_panel.xml
