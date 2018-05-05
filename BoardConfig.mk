@@ -34,8 +34,5 @@ TARGET_OTA_ASSERT_DEVICE := dumpling,OnePlus5T,oneplus5t
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
-# Filesystem
-TARGET_FS_CONFIG_GEN += $(DEVICE_PATH)/config.fs
-
 # inherit from the proprietary version
 -include vendor/oneplus/dumpling/BoardConfigVendor.mk
