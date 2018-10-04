@@ -34,7 +34,7 @@ LINEAGE_ROOT="$MY_DIR"/../../..
 
 function fix_goodix () {
     sed -i \
-        's/\x00gf_fingerprint\x00/\x00fingerprint\x00\x00\x00\x00/' \
+        's|\x00goodix.fingerprint\x00|\x00fingerprint\x00\x00\x00\x00\x00\x00\x00\x00|' \
         "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/"$1"
 }
 
