@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7824489c_79a71d45",
+        "filename": "lineage.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 16734
+      },
+      "writtenOn": "2018-11-21T09:10:01Z",
+      "side": 1,
+      "message": "shouldn\u0027t this be changed also?",
+      "range": {
+        "startLine": 41,
+        "startChar": 61,
+        "endLine": 41,
+        "endChar": 71
+      },
+      "revId": "e43ee42011bb57d133df92f55079b3251a869a97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
