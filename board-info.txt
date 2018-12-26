@@ -1,2 +1,2 @@
-require version-modem=2018-12-18 13:44:07
-require version-firmware=OP5T_O2_BETA_21
+require version-modem=2018-12-23 21:03:23
+require version-firmware=9.0.0
