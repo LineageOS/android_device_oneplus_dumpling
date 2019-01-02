@@ -17,6 +17,11 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
+# Camera
+vendor/etc/camera/imx398_chromatix.xml
+vendor/lib/libchromatix_imx398_3a_4608x3456_30fps_preview_bokeh.so
+vendor/lib/libchromatix_imx398_cpp_4608x3456_snapshot_bokeh.so
+
 # Fingerprint sensor
 vendor/lib/hw/fingerprint.msm8998.so:vendor/lib/hw/fingerprint.fpc.so
 vendor/lib/hw/goodix.fingerprint.msm8998.so:vendor/lib/hw/fingerprint.goodix.so
