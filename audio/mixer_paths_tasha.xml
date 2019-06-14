@@ -1969,11 +1969,13 @@
     </path>
 
     <path name="voicemmode1-call usb-headphones">
+        <ctl name="VOC_EXT_EC MUX" value="None" />
         <ctl name="USB_AUDIO_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer SLIM_0_TX_MMode1" value="1" />
     </path>
 
     <path name="voicemmode1-call usb-headset">
+        <ctl name="VOC_EXT_EC MUX" value="None" />
         <ctl name="USB_AUDIO_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer USB_AUDIO_TX_MMode1" value="1" />
     </path>
@@ -2025,11 +2027,13 @@
     </path>
 
     <path name="voicemmode2-call usb-headphones">
+        <ctl name="VOC_EXT_EC MUX" value="None" />
         <ctl name="USB_AUDIO_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer SLIM_0_TX_MMode2" value="1" />
     </path>
 
     <path name="voicemmode2-call usb-headset">
+        <ctl name="VOC_EXT_EC MUX" value="None" />
         <ctl name="USB_AUDIO_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer USB_AUDIO_TX_MMode2" value="1" />
     </path>
@@ -2296,6 +2300,10 @@
         <ctl name="Voice Sidetone Enable" value="1" />
     </path>
 
+    <path name="speaker-mic">
+        <path name="adc3" />
+    </path>
+
     <path name="speaker-mic-wechat-back">
         <ctl name="AIF1_CAP Mixer SLIM TX4" value="1" />
         <ctl name="AIF1_CAP Mixer SLIM TX5" value="1" />
@@ -2332,10 +2340,6 @@
         <ctl name="ADC3 Volume" value="6" />
         <ctl name="ADC4 Volume" value="6" />
         <ctl name="ADC5 Volume" value="6" />
-    </path>
-
-    <path name="speaker-mic">
-        <path name="adc3" />
     </path>
 
     <path name="speaker-mic-liquid">
