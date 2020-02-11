@@ -14,6 +14,10 @@ vendor/etc/camera/imx398_chromatix.xml
 vendor/lib/libchromatix_imx398_3a_4608x3456_30fps_preview_bokeh.so
 vendor/lib/libchromatix_imx398_cpp_4608x3456_snapshot_bokeh.so
 vendor/lib/libmmcamera_imx398.so
+vendor/lib/libmmcamera2_imglib_modules.so
+vendor/lib/libmmcamera2_mct.so
+vendor/lib/libmmcamera2_sensor_modules.so
+vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/hw/camera.msm8998.so
 
 # Fingerprint sensor
