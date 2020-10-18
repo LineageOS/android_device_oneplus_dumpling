@@ -1,12 +1,4 @@
 # Audio ACDB
-vendor/etc/acdbdata/EU/EU_Bluetooth_cal.acdb
-vendor/etc/acdbdata/EU/EU_General_cal.acdb
-vendor/etc/acdbdata/EU/EU_Global_cal.acdb
-vendor/etc/acdbdata/EU/EU_Handset_cal.acdb
-vendor/etc/acdbdata/EU/EU_Hdmi_cal.acdb
-vendor/etc/acdbdata/EU/EU_Headset_cal.acdb
-vendor/etc/acdbdata/EU/EU_Speaker_cal.acdb
-vendor/etc/acdbdata/EU/EU_workspaceFile.qwsp
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
