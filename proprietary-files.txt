@@ -32,6 +32,3 @@ vendor/lib64/hw/goodix.fingerprint.msm8998.so:vendor/lib64/hw/fingerprint.goodix
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixfingerprintd_binder.so
-
-# Display calib
-vendor/etc/qdcm_calib_data_samsung_s6e3fc1_cmd_mode_dsi_panel.xml
