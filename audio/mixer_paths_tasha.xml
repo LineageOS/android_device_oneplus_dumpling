@@ -459,8 +459,8 @@
     <!-- RT Proxy Cal end -->
 
     <!-- Incall Recording -->
-    <ctl name="MultiMedia1 Mixer VOC_REC_UL" value="0" />
-    <ctl name="MultiMedia1 Mixer VOC_REC_DL" value="0" />
+    <ctl name="MultiMedia9 Mixer VOC_REC_UL" value="0" />
+    <ctl name="MultiMedia9 Mixer VOC_REC_DL" value="0" />
     <ctl name="MultiMedia8 Mixer VOC_REC_UL" value="0" />
     <ctl name="MultiMedia8 Mixer VOC_REC_DL" value="0" />
     <!-- Incall Recording End -->
@@ -644,6 +644,10 @@
     </path>
 
     <path name="echo-reference">
+        <ctl name="AUDIO_REF_EC_UL1 MUX" value="SLIM_RX" />
+    </path>
+
+    <path name="echo-reference handset">
         <ctl name="AUDIO_REF_EC_UL1 MUX" value="SLIM_RX" />
     </path>
 
@@ -972,7 +976,7 @@
 
     <path name="compress-offload-playback speaker-and-headphones">
         <path name="compress-offload-playback headphones" />
-        <path name="compress-offload-playback" />
+        <path name="compress-offload-playback quat_i2s" />
     </path>
 
     <path name="compress-offload-playback speaker-and-bt-sco">
@@ -1672,7 +1676,7 @@
     </path>
 
     <path name="incall-rec-uplink">
-        <ctl name="MultiMedia1 Mixer VOC_REC_UL" value="1" />
+        <ctl name="MultiMedia9 Mixer VOC_REC_UL" value="1" />
     </path>
 
     <path name="incall-rec-uplink bt-sco">
@@ -1712,7 +1716,7 @@
     </path>
 
     <path name="incall-rec-downlink">
-        <ctl name="MultiMedia1 Mixer VOC_REC_DL"  value="1" />
+        <ctl name="MultiMedia9 Mixer VOC_REC_DL"  value="1" />
     </path>
 
     <path name="incall-rec-downlink bt-sco">
@@ -2404,7 +2408,7 @@
     </path>
 
     <path name="handset">
-	<ctl name="BOB Power" value="1" />
+        <ctl name="BOB Power" value="1" />
         <ctl name="COMP7 Switch" value="1" />
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM_0_RX Channels" value="One" />
@@ -2427,13 +2431,13 @@
     </path>
 
     <path name="handset-mic-re-single">
-	<ctl name="AIF1_CAP Mixer SLIM TX4" value="1"/>
+        <ctl name="AIF1_CAP Mixer SLIM TX4" value="1"/>
         <ctl name="SLIM_0_TX Channels" value="One" />
         <ctl name="SLIM TX4 MUX" value="DEC4" />
         <ctl name="ADC MUX4" value="AMIC" />
         <ctl name="AMIC MUX4" value="ADC4" />
         <ctl name="IIR0 INP0 MUX" value="DEC4" />
-	<ctl name="ADC4 Volume" value="6" />
+        <ctl name="ADC4 Volume" value="6" />
     </path>
 
     <path name="handset-mic-re-sbc">
@@ -2518,13 +2522,13 @@
         <ctl name="SLIM TX4 MUX" value="DEC4" />
         <ctl name="ADC MUX4" value="AMIC" />
         <ctl name="AMIC MUX4" value="ADC4" />
-	<ctl name="SLIM TX5 MUX" value="DEC5" />
+        <ctl name="SLIM TX5 MUX" value="DEC5" />
         <ctl name="ADC MUX5" value="AMIC" />
         <ctl name="AMIC MUX5" value="ADC5" />
     </path>
 
     <path name="anc-handset">
-	<ctl name="BOB Power" value="1" />
+        <ctl name="BOB Power" value="1" />
         <ctl name="ANC Function" value="ON" />
         <ctl name="ANC Slot" value="6" />
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
@@ -2828,6 +2832,8 @@
 
     <path name="voice-rec-mic">
         <path name="handset-mic" />
+        <ctl name="ADC4 Volume" value="6" />
+        <ctl name="DEC4 Volume" value="78" />
     </path>
 
     <path name="camcorder-mic">
@@ -3276,85 +3282,4 @@
         <ctl name="MultiMedia2 Mixer USB_AUDIO_TX" value="1" />
     </path>
 
-    <path name="mmap-playback">
-        <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia16" value="1" />
-    </path>
-
-    <path name="mmap-playback quat_i2s">
-        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia16" value="1" />
-    </path>
-
-    <path name="mmap-playback headphones">
-        <ctl name="SLIMBUS_6_RX Audio Mixer MultiMedia16" value="1" />
-    </path>
-
-    <path name="mmap-playback speaker-and-headphones">
-        <path name="mmap-playback headphones" />
-        <path name="mmap-playback quat_i2s" />
-    </path>
-
-    <path name="mmap-playback bt-sco">
-        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia16" value="1" />
-    </path>
-
-    <path name="mmap-playback bt-sco-wb">
-        <ctl name="BT SampleRate" value="KHZ_16" />
-        <path name="mmap-playback bt-sco" />
-    </path>
-
-    <path name="mmap-playback afe-proxy">
-        <ctl name="AFE_PCM_RX Audio Mixer MultiMedia16" value="1" />
-    </path>
-
-    <path name="mmap-playback usb-headphones">
-        <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia16" value="1" />
-    </path>
-
-    <path name="mmap-playback usb-headset">
-        <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia16" value="1" />
-    </path>
-
-    <path name="mmap-playback display-port">
-        <ctl name="DISPLAY_PORT Mixer MultiMedia16" value="1" />
-    </path>
-
-    <path name="mmap-playback hdmi">
-        <ctl name="HDMI Mixer MultiMedia16" value="1" />
-    </path>
-
-    <path name="mmap-playback speaker-and-hdmi">
-        <path name="mmap-playback hdmi" />
-        <path name="mmap-playback quat_i2s" />
-    </path>
-
-    <path name="mmap-playback speaker-and-display-port">
-        <path name="mmap-playback display-port" />
-        <path name="mmap-playback quat_i2s" />
-    </path>
-
-    <path name="mmap-playback speaker-and-usb-headphones">
-        <path name="mmap-playback usb-headphones" />
-        <path name="mmap-playback quat_i2s" />
-    </path>
-
-    <path name="mmap-record">
-        <ctl name="MultiMedia16 Mixer SLIM_0_TX" value="1" />
-    </path>
-
-    <path name="mmap-record bt-sco">
-        <ctl name="MultiMedia16 Mixer SLIM_7_TX" value="1" />
-    </path>
-
-    <path name="mmap-record bt-sco-wb">
-        <ctl name="BT SampleRate" value="KHZ_16" />
-        <path name="mmap-record bt-sco" />
-    </path>
-
-    <path name="mmap-record capture-fm">
-        <ctl name="MultiMedia16 Mixer SLIM_8_TX" value="1" />
-    </path>
-
-    <path name="mmap-record usb-headset-mic">
-        <ctl name="MultiMedia16 Mixer USB_AUDIO_TX" value="1" />
-    </path>
 </mixer>
