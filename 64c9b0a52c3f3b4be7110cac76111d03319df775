@@ -16,6 +16,24 @@
       "revId": "64c9b0a52c3f3b4be7110cac76111d03319df775",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "42d68ff1_cd413a2c",
+        "filename": "audio/mixer_paths_tasha.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 1719,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2021-02-10T12:58:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dc04e6ca_bd675941",
+      "revId": "64c9b0a52c3f3b4be7110cac76111d03319df775",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
