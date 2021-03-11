@@ -10,9 +10,6 @@ vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Camera
-vendor/etc/camera/imx398_chromatix.xml
-vendor/lib/libchromatix_imx398_3a_4608x3456_30fps_preview_bokeh.so
-vendor/lib/libchromatix_imx398_cpp_4608x3456_snapshot_bokeh.so
 vendor/lib/libmmcamera_imx398.so
 vendor/lib/libmmcamera2_iface_modules.so
 vendor/lib/libmmcamera2_imglib_modules.so
@@ -20,6 +17,41 @@ vendor/lib/libmmcamera2_mct.so
 vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/hw/camera.msm8998.so
+
+# Camera actuators
+vendor/lib/libactuator_lc898217xc_imx376k.so
+
+# Camera chromatix
+vendor/lib/libchromatix_imx376k_3a_1840x1380_30fps_preview_bokeh.so
+vendor/lib/libchromatix_imx376k_3a_2592x1458_120fps_video.so
+vendor/lib/libchromatix_imx376k_3a_2592x1458_60fps_video.so
+vendor/lib/libchromatix_imx376k_3a_2592x1940_30fps_preview.so
+vendor/lib/libchromatix_imx376k_3a_2592x1940_30fps_preview_bokeh.so
+vendor/lib/libchromatix_imx376k_3a_2592x1940_30fps_preview_wechat.so
+vendor/lib/libchromatix_imx376k_common.so
+vendor/lib/libchromatix_imx376k_cpp_2592x1458_120fps_video.so
+vendor/lib/libchromatix_imx376k_cpp_2592x1458_60fps_video.so
+vendor/lib/libchromatix_imx376k_cpp_2592x1940_24fps_preview_bokeh.so
+vendor/lib/libchromatix_imx376k_cpp_2592x1940_24fps_snapshot_bokeh.so
+vendor/lib/libchromatix_imx376k_cpp_2592x1940_30fps_preview.so
+vendor/lib/libchromatix_imx376k_cpp_2592x1940_30fps_snapshot.so
+vendor/lib/libchromatix_imx376k_isp_2592x1458_120fps_video.so
+vendor/lib/libchromatix_imx376k_isp_2592x1458_60fps_video.so
+vendor/lib/libchromatix_imx376k_isp_2592x1940_24fps_snapshot_bokeh.so
+vendor/lib/libchromatix_imx376k_isp_2592x1940_30fps_snapshot.so
+vendor/lib/libchromatix_imx376k_postproc.so
+vendor/lib/libchromatix_imx398_3a_4608x3456_30fps_preview_bokeh.so
+vendor/lib/libchromatix_imx398_cpp_4608x3456_snapshot_bokeh.so
+
+# Camera etc
+vendor/etc/camera/imx376k_chromatix.xml
+vendor/etc/camera/imx398_chromatix.xml
+vendor/etc/oneplus5T_vstab_db_1080p_video_0_30fps.config
+vendor/etc/oneplus5T_vstab_db_1080p_video_0_60fps.config
+vendor/etc/oneplus5T_vstab_db_1080p_video_1_30fps.config
+vendor/etc/oneplus5T_vstab_db_4k_video_0_30fps.config
+vendor/etc/oneplus5T_vstab_db_720p_video_0_30fps.config
+vendor/etc/oneplus5T_vstab_db_720p_video_1_30fps.config
 
 # Fingerprint sensor
 vendor/lib/hw/fingerprint.msm8998.so:vendor/lib/hw/fingerprint.fpc.so
