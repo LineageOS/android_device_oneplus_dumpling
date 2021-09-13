@@ -53,14 +53,11 @@ vendor/etc/oneplus5T_vstab_db_4k_video_0_30fps.config
 vendor/etc/oneplus5T_vstab_db_720p_video_0_30fps.config
 vendor/etc/oneplus5T_vstab_db_720p_video_1_30fps.config
 
+# Fingerprint firmware loader - from sagit V11.0.6.0
+vendor/lib64/libgf_ca.so|a085af23228a871d67a6aa3122561f742a7bb822
+
 # Fingerprint sensor
-vendor/lib/hw/fingerprint.msm8998.so:vendor/lib/hw/fingerprint.fpc.so
-vendor/lib/hw/goodix.fingerprint.msm8998.so:vendor/lib/hw/fingerprint.goodix.so
-vendor/lib/libgf_ca.so
-vendor/lib/libgf_hal.so
-vendor/lib/libgoodixfingerprintd_binder.so
 vendor/lib64/hw/fingerprint.msm8998.so:vendor/lib64/hw/fingerprint.fpc.so
 vendor/lib64/hw/goodix.fingerprint.msm8998.so:vendor/lib64/hw/fingerprint.goodix.so
-vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixfingerprintd_binder.so
