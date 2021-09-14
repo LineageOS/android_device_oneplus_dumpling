@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "af16a8ed_55c159e2",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2021-09-14T08:14:59Z",
+      "side": 1,
+      "message": "Make a seperate section for this blob.",
+      "range": {
+        "startLine": 56,
+        "startChar": 23,
+        "endLine": 56,
+        "endChar": 50
+      },
+      "revId": "bcc919c34a53d4c3e50591759c24bf9be703346a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
