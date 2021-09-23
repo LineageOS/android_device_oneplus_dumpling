@@ -36,5 +36,3 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # inherit from the proprietary version
 -include vendor/oneplus/dumpling/BoardConfigVendor.mk
-
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
