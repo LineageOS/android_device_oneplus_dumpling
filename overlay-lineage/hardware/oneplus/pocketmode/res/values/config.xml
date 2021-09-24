@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2021 The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Fingerprint disable path -->
+    <string name="fingerprint_disable_path">/sys/devices/soc/soc:goodix_fp/proximity_state</string>
+</resources>
