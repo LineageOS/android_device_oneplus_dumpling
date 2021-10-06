@@ -9,6 +9,9 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
+# Audio firmware
+vendor/etc/firmware/tfa98xx.cnt:vendor/firmware/tfa98xx.cnt
+
 # Camera
 vendor/lib/libmmcamera_imx398.so
 vendor/lib/libmmcamera2_iface_modules.so
