@@ -1,0 +1,7 @@
+on boot
+    # Fingerprint
+    chmod 0666 /dev/goodix_fp
+
+    # Proximity state
+    chown system system /sys/devices/soc/soc:goodix_fp/proximity_state
+    chmod 0660 /sys/devices/soc/soc:goodix_fp/proximity_state
