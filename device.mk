@@ -51,5 +51,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.oneplus
 
+# Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.fingerprint=goodix \
+    vendor.boot.project_name=17801
+
 # Inherit from oneplus msm8998-common
 $(call inherit-product, device/oneplus/msm8998-common/common.mk)
