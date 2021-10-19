@@ -459,8 +459,8 @@
     <!-- RT Proxy Cal end -->
 
     <!-- Incall Recording -->
-    <ctl name="MultiMedia1 Mixer VOC_REC_UL" value="0" />
-    <ctl name="MultiMedia1 Mixer VOC_REC_DL" value="0" />
+    <ctl name="MultiMedia9 Mixer VOC_REC_UL" value="0" />
+    <ctl name="MultiMedia9 Mixer VOC_REC_DL" value="0" />
     <ctl name="MultiMedia8 Mixer VOC_REC_UL" value="0" />
     <ctl name="MultiMedia8 Mixer VOC_REC_DL" value="0" />
     <!-- Incall Recording End -->
@@ -622,7 +622,7 @@
         <ctl name="RX MIX TX1 MUX" value="RX_MIX_VBAT7" />
         <ctl name="SLIM_1_TX Channels" value="One" />
         <ctl name="VOC_EXT_EC MUX" value="SLIM_1_TX" />
-   </path>
+    </path>
 
     <path name="echo-reference speaker-vbat-mono-2">
         <ctl name="AIF3_CAP Mixer SLIM TX2" value="1" />
@@ -630,9 +630,9 @@
         <ctl name="RX MIX TX2 MUX" value="RX_MIX_VBAT8" />
         <ctl name="SLIM_1_TX Channels" value="One" />
         <ctl name="VOC_EXT_EC MUX" value="SLIM_1_TX" />
-   </path>
+    </path>
 
-   <path name="echo-reference speaker-vbat">
+    <path name="echo-reference speaker-vbat">
         <ctl name="AIF3_CAP Mixer SLIM TX1" value="1" />
         <ctl name="AIF3_CAP Mixer SLIM TX2" value="1" />
         <ctl name="SLIM TX1 MUX" value="RX_MIX_TX1" />
@@ -728,8 +728,8 @@
     </path>
 
     <path name="deep-buffer-playback speaker-and-headphones">
-       <ctl name="SLIMBUS_6_RX Audio Mixer MultiMedia1" value="1" />
-       <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+        <ctl name="SLIMBUS_6_RX Audio Mixer MultiMedia1" value="1" />
+        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
 
     <path name="deep-buffer-playback speaker-and-bt-sco">
@@ -992,6 +992,7 @@
     <path name="compress-offload-playback2">
         <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia7" value="1" />
     </path>
+
     <path name="compress-offload-playback2 quat_i2s">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia7" value="1" />
     </path>
@@ -1638,11 +1639,11 @@
     </path>
 
     <path name="low-latency-record">
-      <ctl name="MultiMedia8 Mixer SLIM_0_TX" value="1" />
+        <ctl name="MultiMedia8 Mixer SLIM_0_TX" value="1" />
     </path>
 
     <path name="low-latency-record bt-sco">
-      <ctl name="MultiMedia8 Mixer SLIM_7_TX" value="1" />
+        <ctl name="MultiMedia8 Mixer SLIM_7_TX" value="1" />
     </path>
 
     <path name="low-latency-record bt-sco-wb">
@@ -1656,7 +1657,7 @@
     </path>
 
     <path name="low-latency-record capture-fm">
-      <ctl name="MultiMedia8 Mixer SLIM_8_TX" value="1" />
+        <ctl name="MultiMedia8 Mixer SLIM_8_TX" value="1" />
     </path>
 
     <path name="fm-virtual-record capture-fm">
@@ -1676,7 +1677,7 @@
     </path>
 
     <path name="incall-rec-uplink">
-        <ctl name="MultiMedia1 Mixer VOC_REC_UL" value="1" />
+        <ctl name="MultiMedia9 Mixer VOC_REC_UL" value="1" />
     </path>
 
     <path name="incall-rec-uplink bt-sco">
@@ -1716,7 +1717,7 @@
     </path>
 
     <path name="incall-rec-downlink">
-        <ctl name="MultiMedia1 Mixer VOC_REC_DL" value="1" />
+        <ctl name="MultiMedia9 Mixer VOC_REC_DL" value="1" />
     </path>
 
     <path name="incall-rec-downlink bt-sco">
@@ -1803,7 +1804,7 @@
         <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia6" value="1" />
         <ctl name="MultiMedia6 Mixer SLIM_0_TX" value="1" />
         <ctl name="SLIMBUS_DL_HL Switch" value="1" />
-   </path>
+    </path>
 
     <path name="hfp-sco headphones">
         <ctl name="HFP_PRI_AUX_UL_HL Switch" value="1" />
@@ -1813,11 +1814,11 @@
         <ctl name="SLIMBUS6_DL_HL Switch" value="1" />
     </path>
 
-   <path name="hfp-sco-wb">
+    <path name="hfp-sco-wb">
         <ctl name="BT SampleRate RX" value="KHZ_16" />
         <ctl name="BT SampleRate TX" value="KHZ_16" />
         <path name="hfp-sco" />
-   </path>
+    </path>
 
     <path name="hfp-sco-wb headphones">
         <ctl name="AUX PCM SampleRate" value="KHZ_16" />
@@ -2263,23 +2264,23 @@
         <path name="speaker" />
     </path>
 
-   <path name="speaker-vbat-mono">
-       <path name="speaker-mono" />
-       <ctl name="RX INT7 VBAT SPKRL VBAT Enable" value="1" />
-   </path>
+    <path name="speaker-vbat-mono">
+        <path name="speaker-mono" />
+        <ctl name="RX INT7 VBAT SPKRL VBAT Enable" value="1" />
+    </path>
 
-   <path name="speaker-vbat-mono-2">
-       <path name="speaker-mono-2" />
-       <ctl name="RX INT8 VBAT SPKRR VBAT Enable" value="1" />
-   </path>
+    <path name="speaker-vbat-mono-2">
+        <path name="speaker-mono-2" />
+        <ctl name="RX INT8 VBAT SPKRR VBAT Enable" value="1" />
+    </path>
 
-   <path name="speaker-vbat">
-       <path name="speaker" />
-       <ctl name="RX INT7 VBAT SPKRL VBAT Enable" value="1" />
-       <ctl name="RX INT8 VBAT SPKRR VBAT Enable" value="1" />
-   </path>
+    <path name="speaker-vbat">
+        <path name="speaker" />
+        <ctl name="RX INT7 VBAT SPKRL VBAT Enable" value="1" />
+        <ctl name="RX INT8 VBAT SPKRR VBAT Enable" value="1" />
+    </path>
 
-   <path name="sidetone-iir">
+    <path name="sidetone-iir">
         <ctl name="IIR0 Enable Band1" value="1" />
         <ctl name="IIR0 Enable Band2" value="1" />
         <ctl name="IIR0 Enable Band3" value="1" />
