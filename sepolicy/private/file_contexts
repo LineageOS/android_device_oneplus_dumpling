@@ -1,0 +1,2 @@
+# Pocket mode
+/sys/devices/soc/soc:goodix_fp/proximity_state                  u:object_r:sysfs_fpc_proximity:s0
