@@ -16,6 +16,24 @@
       "message": "see other commit in chain",
       "revId": "d5856436f32e06d01778c8ca8eb48db8f19babf6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f4e58ed_f10f56b0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-03-02T09:35:58Z",
+      "side": 1,
+      "message": "This applies for 18.1 also. And the original commit has nothing to do with these variables.",
+      "parentUuid": "101836e1_64583982",
+      "revId": "d5856436f32e06d01778c8ca8eb48db8f19babf6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
