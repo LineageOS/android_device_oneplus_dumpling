@@ -1,2 +1,5 @@
 ro.hardware.fingerprint=goodix
 vendor.boot.project_name=17801
+
+# USB
+vendor.usb.product_string=OnePlus 5T
