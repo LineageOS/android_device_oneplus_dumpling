@@ -13,13 +13,13 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/firmware/tfa98xx.cnt:vendor/firmware/tfa98xx.cnt
 
 # Camera
-vendor/lib/libmmcamera_imx398.so
+vendor/lib/hw/camera.msm8998.so
 vendor/lib/libmmcamera2_iface_modules.so
 vendor/lib/libmmcamera2_imglib_modules.so
 vendor/lib/libmmcamera2_mct.so
 vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_modules.so
-vendor/lib/hw/camera.msm8998.so
+vendor/lib/libmmcamera_imx398.so
 
 # Camera actuators
 vendor/lib/libactuator_lc898217xc_imx376k.so
