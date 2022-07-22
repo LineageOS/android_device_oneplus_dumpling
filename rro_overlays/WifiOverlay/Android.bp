@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "DumplingWifiOverlay",
+    theme: "DumplingWifiOverlay",
+    sdk_version: "current",
+    product_specific: true,
+}
