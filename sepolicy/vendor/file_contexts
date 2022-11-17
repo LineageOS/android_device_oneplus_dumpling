@@ -1,6 +1,6 @@
 # Fingerprint
 /dev/goodix_fp                                                  u:object_r:fingerprint_device:s0
-/sys/devices/soc/soc:goodix_fp/proximity_state                  u:object_r:sysfs_fpc_proximity:s0
+/sys/devices/soc/soc:goodix_fp/proximity_state                  u:object_r:sysfs_proximity:s0
 
 # Touch
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.oneplus    u:object_r:hal_touch_oneplus_msm8998_exec:s0
