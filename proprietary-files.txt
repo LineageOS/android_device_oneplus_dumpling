@@ -60,7 +60,6 @@ vendor/etc/oneplus5T_vstab_db_720p_video_1_30fps.config
 vendor/lib64/libgf_ca.so|a085af23228a871d67a6aa3122561f742a7bb822
 
 # Fingerprint sensor
-vendor/lib64/hw/fingerprint.msm8998.so:vendor/lib64/hw/fingerprint.fpc.so
-vendor/lib64/hw/goodix.fingerprint.msm8998.so:vendor/lib64/hw/fingerprint.goodix.so
+vendor/lib64/hw/goodix.fingerprint.msm8998.so:vendor/lib64/hw/fingerprint.msm8998.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixfingerprintd_binder.so
