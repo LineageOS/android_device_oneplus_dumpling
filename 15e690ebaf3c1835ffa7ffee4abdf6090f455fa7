@@ -16,6 +16,23 @@
       "message": "Samsung GT-i8262",
       "revId": "15e690ebaf3c1835ffa7ffee4abdf6090f455fa7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "53f4c115_591221f9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32094
+      },
+      "writtenOn": "2022-11-20T12:56:05Z",
+      "side": 1,
+      "message": "Samsung GT-i8262\n",
+      "revId": "15e690ebaf3c1835ffa7ffee4abdf6090f455fa7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
