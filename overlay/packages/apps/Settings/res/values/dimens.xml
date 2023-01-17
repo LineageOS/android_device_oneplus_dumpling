@@ -4,6 +4,8 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+
     <dimen name="fingerprint_dot_radius">15dp</dimen>
     <item name="fingerprint_sensor_location_fraction_y" type="fraction">36%</item>
+
 </resources>
