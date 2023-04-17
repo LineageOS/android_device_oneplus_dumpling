@@ -1,3 +1,6 @@
+# OnePlus 5T proprietary files - from
+# OnePlus/OnePlus5T/OnePlus5T:10/QKQ1.191014.012/2010292059, unless pinned
+
 # Audio ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
