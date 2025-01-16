@@ -7,6 +7,7 @@ BTFM.bin:bluetooth.img
 cmnlib.mbn:cmnlib.img
 cmnlib64.mbn:cmnlib64.img
 devcfg.mbn:devcfg.img
+filemap
 hyp.mbn:hyp.img
 keymaster.mbn:keymaster.img
 logo.bin:LOGO.img
