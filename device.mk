@@ -39,7 +39,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.oneplus
+    vendor.lineage.touch-service.oneplus
 
 # Wifi
 PRODUCT_PACKAGES += \
